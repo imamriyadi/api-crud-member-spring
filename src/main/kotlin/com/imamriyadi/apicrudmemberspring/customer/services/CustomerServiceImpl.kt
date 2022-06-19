@@ -26,4 +26,12 @@ class CustomerServiceImpl:CustomerService {
     override fun addCustomer(customer: Customer): List<Customer> {
         return customerRepository.addCustomer(customer)
     }
+
+    override fun updateCustomer(ids: String,customer: Customer): Customer? {
+        return customerRepository.updateCustomer(ids,customer)
+    }
+
+    override fun deleteCustomer(ids: String): List<Customer> {
+       return customerRepository.deleteCustomer(ids)
+    }
 }

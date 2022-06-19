@@ -7,4 +7,6 @@ interface CustomerRepository {
     fun getCustomerByName(name:String): Customer?
     fun getCustomer():List<Customer>
     fun addCustomer(customer: Customer):List<Customer>
+    fun updateCustomer(ids: String,customer: Customer):Customer?
+    fun deleteCustomer(ids: String):List<Customer>
 }
