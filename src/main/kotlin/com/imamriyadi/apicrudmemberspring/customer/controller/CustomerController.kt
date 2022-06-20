@@ -25,7 +25,7 @@ class CustomerController {
         ):BaseResponse<Customer>{
         return BaseResponse(
             status = true,
-            message = "Success",
+            message = "Get Data Success.",
             data = customerService.getCustomerByID(ids)
         )
     }
@@ -36,7 +36,7 @@ class CustomerController {
     ):BaseResponse<Customer>{
         return BaseResponse(
             status = true,
-            message = "Success",
+            message = "Get Data Success.",
             data = customerService.getCustomerByName(name)
         )
     }
@@ -45,7 +45,7 @@ class CustomerController {
     fun getCustomers():BaseResponse<List<Customer>>{
         return BaseResponse(
             status = true,
-            message = "Success",
+            message = "Get Data Success.",
             data = customerService.getCustomer()
         )
     }
@@ -56,7 +56,7 @@ class CustomerController {
     ):BaseResponse<List<Customer>>{
         return BaseResponse(
             status = true,
-            message = "Success",
+            message = "Add Success.",
             data = customerService.addCustomer(customer)
         )
     }
@@ -68,7 +68,7 @@ class CustomerController {
     ):BaseResponse<Customer>{
         return BaseResponse(
             status = true,
-            message = "Success",
+            message = "Update Success.",
             data = customerService.updateCustomer(ids,customer)
         )
     }
@@ -79,7 +79,7 @@ class CustomerController {
     ):BaseResponse<List<Customer>>{
         return BaseResponse(
             status = true,
-            message = "Success",
+            message = "Delete Success.",
             data = customerService.deleteCustomer(ids)
         )
     }
