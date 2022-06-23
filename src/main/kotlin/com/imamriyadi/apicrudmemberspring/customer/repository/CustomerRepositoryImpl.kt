@@ -48,7 +48,7 @@ class CustomerRepositoryImpl : CustomerRepository {
         return if (update.wasAcknowledged()) {
             getCustomerByID(ids)
         } else {
-            throw IllegalStateException("Delete failed")
+            throw IllegalStateException("Update failed")
         }
     }
 

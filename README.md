@@ -22,7 +22,7 @@ https://api-crud-member-spring.herokuapp.com/v1
 Request :
 
 - Method : POST
-- Endpoint : `/v1/customer`
+- Endpoint : `/customer`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
@@ -58,7 +58,7 @@ Response :
 Request :
 
 - Method : GET
-- Endpoint : `/api/customer`
+- Endpoint : `/customer`
 - Header :
   - Accept: application/json
 
@@ -84,7 +84,7 @@ Response :
 Request :
 
 - Method : GET
-- Endpoint : `/api/customer/by-id/{id}`
+- Endpoint : `/customer/by-id/{id}`
 - Header :
   - Accept: application/json
 
@@ -110,7 +110,7 @@ Response :
 Request :
 
 - Method : GET
-- Endpoint : `/api/customer/by-name/{name}`
+- Endpoint : `/customer/by-name/{name}`
 - Header :
   - Accept: application/json
 
@@ -136,7 +136,7 @@ Response :
 Request :
 
 - Method : PUT
-- Endpoint : `/api/Customer/{id}`
+- Endpoint : `/customer/{id}`
 - Header :
   - Content-Type: application/json
   - Accept: application/json
@@ -170,7 +170,7 @@ Response :
 Request :
 
 - Method : DELETE
-- Endpoint : `/v1/customer/{ids}`
+- Endpoint : `/customer/{ids}`
 - Header :
   - Accept: application/json
 
